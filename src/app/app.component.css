@@ -1,0 +1,11 @@
+.file{
+  text-align: center;
+  font-family: serif;
+  background-color: aliceblue;
+  background-image: url("http://indiafacts.org/wp-content/uploads/2016/12/chPromo1-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.file h2{
+  font-size: 50px;
+}

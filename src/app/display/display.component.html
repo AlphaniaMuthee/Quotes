@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="output">
+        <h2>Amazing Quotes for You!</h2>
+            <div *ngFor = 'let winner of winners'>
+                <p appHighlight ><strong>CONGRATULATIONS!!!</strong><br>The best quote is: {{winner.userquote}}<br> by {{winner.author}}</p>
+                <br><br>
+            </div>
+          <ol>
+            <li *ngFor='let quote of quotes'>
+                <p>{{quote.userquote}}<br><strong>{{quote.author}}</strong><br> Posted by: {{quote.Username}} on {{quote.submit|date}}, {{quote.submit|daysCount}} days ago.</p>
+                <button class="btn btn-info" (click)=delete()>Delete Quote</button><br><br>
+                <div class="row">
+                  <div class="col-md-6">
+                    <button class="btn btn-warning"  (click)="upvote(quote)" (click)="bestquote()">Upvote</button> <img src="https://i.imgur.com/rbi50zT.png" alt="upvote icon" height="20px" width="20px"><strong>{{quote.Upvote}}</strong>
+                  </div>
+                  <div class="col-md-6">
+                    <button class="btn btn-warning"(click)="downvote(quote)" >Downvote</button><img src="https://4vector.com/i/free-vector-arrow-orange-down-clip-art_120059_arrow-orange-down-clip-art/Arrow_Orange_Down_clip_art_hight.png" alt="downvote icon" height="20px" width="20px"> <strong>{{quote.Downvote}}</strong>
+                  </div>
+                </div>
+            </li>
+          </ol>
+    </div>
+  </div>
+  <br>
+  <div class="col-md-6">
+    <app-entry (addquote)="addquote($event)"></app-entry>
+  </div>
+</div>
