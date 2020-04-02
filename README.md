@@ -1,5 +1,17 @@
+# Quotes N Vote System
+#### This app allows users to upload quotes, view quotes posted by others, upvote or downvote the quotes as well as share them, 1 April, 2020.
+#### By **Alphania Muthee**
+## Description
+This app allows users to upload quotes, view quotes posted by others, upvote or downvote the quotes as well as share them through various social media sites. After posting a quote, a user is also able to delete it. Quotyes with the highest upvotes are the winning quotes and users are able to see the winning quotes.
+## Setup/Installation Requirements
+* CPU SPEED: Dual Core 2.0 GHz from Intel or AMD 2.0GHz.
+* OS: Windows 7 and up, Mac or Ubuntu
+* Free Disk Space: 3 GB.
+## Support and contact details
+For queries or more information, contact me through any of the following:
+* on twitter @AlphaniaC
+* email walphania2@gmail.com
 # Quotes
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
 ## Development server
@@ -25,3 +37,23 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### License
+*The MIT License*
+Copyright (c) 2020 **Alphania Muthee**
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

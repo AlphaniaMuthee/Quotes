@@ -41,6 +41,9 @@ winners:Quote[]=[];
 
    }
  }
+ toggleDetails(index){
+   this.quotes[index].showUsername = !this.quotes[index].showUsername;
+ }
 
  constructor() { }
 

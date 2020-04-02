@@ -1,11 +1,11 @@
-.file{
+#file{
   text-align: center;
   font-family: serif;
   background-color: aliceblue;
-  background-image: url("http://indiafacts.org/wp-content/uploads/2016/12/chPromo1-1.jpg");
+  background-image: url("https://images7.alphacoders.com/668/thumb-1920-668084.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.file h2{
-  font-size: 50px;
+#file h2{
+  font-size: 100px;
 }

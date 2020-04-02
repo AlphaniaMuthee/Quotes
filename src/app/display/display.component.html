@@ -6,20 +6,46 @@
                 <p appHighlight ><strong>CONGRATULATIONS!!!</strong><br>The best quote is: {{winner.userquote}}<br> by {{winner.author}}</p>
                 <br><br>
             </div>
-          <ol>
-            <li *ngFor='let quote of quotes'>
-                <p>{{quote.userquote}}<br><strong>{{quote.author}}</strong><br> Posted by: {{quote.Username}} on {{quote.submit|date}}, {{quote.submit|daysCount}} days ago.</p>
-                <button class="btn btn-info" (click)=delete()>Delete Quote</button><br><br>
-                <div class="row">
-                  <div class="col-md-6">
-                    <button class="btn btn-warning"  (click)="upvote(quote)" (click)="bestquote()">Upvote</button> <img src="https://i.imgur.com/rbi50zT.png" alt="upvote icon" height="20px" width="20px"><strong>{{quote.Upvote}}</strong>
+          <ul>
+            <div *ngFor='let quote of quotes;let i = index'>
+              <li>
+                  <p>{{quote.userquote}}<br><strong>{{quote.author}}</strong></p>
+                  <button (click)='toggleDetails(i)'>More Info</button>
+                  <br>
+                  <div *ngIf='quote.showUsername'>
+                    <p>Posted by: {{quote.Username}} on {{quote.submit|date}}, {{quote.submit|daysCount}} days ago.</p>
+                    <button class="btn btn-info" (click)=delete()>Delete Quote</button><br><br>
                   </div>
-                  <div class="col-md-6">
-                    <button class="btn btn-warning"(click)="downvote(quote)" >Downvote</button><img src="https://4vector.com/i/free-vector-arrow-orange-down-clip-art_120059_arrow-orange-down-clip-art/Arrow_Orange_Down_clip_art_hight.png" alt="downvote icon" height="20px" width="20px"> <strong>{{quote.Downvote}}</strong>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <button (click)="upvote(quote)" (click)="bestquote()"><img src="https://i.imgur.com/rbi50zT.png" alt="upvote icon" height="20px" width="20px"></button><strong>{{quote.Upvote}}</strong>
+                    </div>
+                    <div class="col-md-6">
+                      <button (click)="downvote(quote)" ><img src="https://4vector.com/i/free-vector-arrow-orange-down-clip-art_120059_arrow-orange-down-clip-art/Arrow_Orange_Down_clip_art_hight.png" alt="downvote icon" height="20px" width="20px"></button> <strong>{{quote.Downvote}}</strong>
+                    </div>
                   </div>
-                </div>
-            </li>
-          </ol>
+              </li>
+            </div>
+          </ul>
+          <div id=social>
+            <div class="row" id="share">
+              <p>Share the quotes via any of these social platforms:</p>
+            </div>
+            <div class= "row" id="icon">
+              <div class="col-md-3">
+                <img src="https://i.dlpng.com/static/png/6438726_preview.png" alt="gmail icon" height="80px" width="80px">
+              </div>
+              <div class="col-md-3">
+                <img src="https://toppng.com/uploads/preview/transparent-background-twitter-logo-115496806068c9eheqhlg.png" alt="twitter icon" height="80px" width="80px">
+              </div>
+              <div class="col-md-3">
+                <img src="https://i.ya-webdesign.com/images/whatsapp-logo-png-transparent-background-1.png" alt="whatsApp Icon" height="80px" width="80px">
+              </div>
+              <div class="col-md-3">
+                <img src="https://i7.pngguru.com/preview/605/858/382/facebook-inc-logo-computer-icons-like-button-facebook-icon.jpg" alt="Facebook icon" height="80px" width="80px">
+              </div>
+            </div>
+          </div>
     </div>
   </div>
   <br>
